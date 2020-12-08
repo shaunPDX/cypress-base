@@ -16,6 +16,6 @@
   "author": "Shaun",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^5.2.0"
+    "cypress": "^6.1.0"
   }
 }

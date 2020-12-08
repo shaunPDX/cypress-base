@@ -1,4 +1,5 @@
-describe('A basic Cypress test', () => {
+describe('Cypress testing example', () => {
+    // This is the most basic automation test that you can do in Cypress
     before(() => {
       cy.visit('http://www.google.com')
     });
@@ -13,19 +14,3 @@ describe('A basic Cypress test', () => {
         .should('have.attr', 'type', 'text')
     });
 });
-
-describe('API Testing Example', () => {
-    it('Should return the correct response status and body', () => {
-      cy.request(
-        'GET',
-        'https://jsonplaceholder.typicode.com/posts/1/comments'
-      ).then(($res) => {
-        const firstUser = $res.body[0];
-        expect($res.status).to.eq(200)
-        expect($res.body).to.have.length(5)
-        expect(firstUser.body).to.contain('laudantium enim quasi est quidem magnam voluptate ipsam eos')
-        expect(firstUser.email).to.eq('Eliseo@gardner.biz')
-        expect(firstUser.id).to.eq(1)
-      });
-    });
-  });
