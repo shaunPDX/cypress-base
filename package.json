@@ -4,7 +4,7 @@
   "description": "A baseline for Cypress work that I can clone and reference later.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/cypress run"
   },
   "keywords": [
     "shaun",
